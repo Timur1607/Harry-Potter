@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" type="module" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__title">
+                <h1 class="header__title_h1">Harry Potter</h1>
+                <p class="header__title_text">View all characters from the Harry Potter universe</p>
+            </div>
+            <div class="header__searching">
+                <form class="form">
+                    <div class="header__searching_name">
+                        <label class="header__searching_name_Label" for="name">Name</label>
+                        <input class="header__searching_name_Input" id="name" type="text" placeholder="Hermione">
+                    </div>
+                    <div class="header__searching_house">
+                        <label class="header__searching_house_Label" for="house">School</label>
+                        <input class="header__searching_house_Input" id="house" list="houseye" placeholder="Choose one">
+                        <svg class="header__searching_house_svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M4 6L8 10L12 6" stroke="#ABB5BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="header__searching_house_div">
+                            <p class="header__searching_house_div_house Slytherin">Slytherin</p>
+                            <p class="header__searching_house_div_house Gryffindor">Gryffindor</p>
+                            <p class="header__searching_house_div_house Hufflepuff">Hufflepuff</p>
+                            <p class="header__searching_house_div_house Ravenclaw">Ravenclaw</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <hr class="hr">
+    <main class="main">
+        <div class="container">
+            <div class="articles">
+                <!-- <article class="article">
+                    <img class="article__picture_img" src="http://hp-api.herokuapp.com/images/hermione.jpeg" alt="heroes picture">
+                    <div class="article__main">
+                        <p class="article__main_name">Hermione Granger</p>
+                        <p class="article__main_actor description">Actor: Emma Watson</p>
+                        <p class="article__main_gender description">Gender: female</p>
+                        <p class="article__main_house description">House: Gryffindor</p>
+                        <p class="article__main_wandCore description">Wand core: dragon heartstring</p>
+                        <p class="article__main_alive description">Alive: yes</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <img class="article__picture_img" src="" alt="heroes picture">
+                    <div class="article__main">
+                        <p class="article__name"></p>
+                        <p class="article__actor"></p>
+                        <p class="article__gender"></p>
+                        <p class="article__house"></p>
+                        <p class="article__wandCore"></p>
+                        <p class="article__alive"></p>
+                    </div>
+                </article> -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>

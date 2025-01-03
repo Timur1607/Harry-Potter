@@ -1,0 +1,326 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, img {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./font/Inter/Inter-VariableFont_opsz\,wght.eot), url(./font/Inter/Inter-VariableFont_opsz\,wght.otf), url(./font/Inter/Inter-VariableFont_opsz\,wght.ttf), url(./font/Inter/Inter-VariableFont_opsz\,wght.woff), url(./font/Inter/Inter-VariableFont_opsz\,wght.woff2);
+}
+body {
+  background: #F5F5F5;
+}
+
+.container {
+  max-width: 768px;
+  width: 100%;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 64px;
+}
+.header__title {
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+}
+.header__title_h1 {
+  color: #000;
+  font-family: "Inter";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.28px;
+}
+.header__title_text {
+  color: #000;
+  font-family: "Inter";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+.header__searching {
+  display: flex;
+}
+.header__searching_name {
+  display: flex;
+  flex-direction: column;
+}
+.header__searching_name_Label {
+  color: #818182;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 3px;
+}
+.header__searching_name_Input {
+  width: 452px;
+  height: 38px;
+  color: var(--Secondary-Light-Color, #ABB5BE);
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  border-radius: 4px;
+  border: 1px solid var(--Stroke-Input, #CED4DA);
+  background: var(---Gray-White, #FFF);
+  padding: 9px 0 8px 17px;
+  cursor: pointer;
+}
+.header__searching_house {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.header__searching_house_Label {
+  color: #818182;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 3px;
+}
+.header__searching_house_Input {
+  width: 216px;
+  height: 38px;
+  color: var(--Secondary-Light-Color, #ABB5BE);
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  border-radius: 4px;
+  border: 1px solid var(--Stroke-Input, #CED4DA);
+  background: var(---Gray-White, #FFF);
+  padding: 9px 0 8px 15px;
+  cursor: pointer;
+}
+.header__searching_house_svg {
+  position: absolute;
+  top: 43px;
+  right: 12px;
+  cursor: pointer;
+}
+.header__searching_house_div {
+  border-radius: 4px;
+  border: 1px solid var(--Stroke-Input, #CED4DA);
+  background: var(---Gray-White, #FFF);
+  width: 216px;
+  display: none;
+  flex-direction: column;
+  padding-left: 15px;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  gap: 4px;
+}
+.header__searching_house_div_house {
+  color: var(--Secondary-Light-Color, #ABB5BE);
+  color: #000;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.hr {
+  margin: 40px 0;
+  background: #DEE2E6;
+}
+
+.divScript {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .header__searching_name_Input {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .header__title_h1 {
+    font-size: 55px;
+  }
+  .header__title_text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 636px) {
+  .form {
+    flex-direction: column;
+  }
+  .header__searching_name_Input {
+    width: 100%;
+  }
+  .header__searching_house_Input {
+    width: 100%;
+  }
+  .header__searching_house_div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .form {
+    flex-direction: column;
+  }
+  .header__title {
+    margin-bottom: 28px;
+    gap: 14px;
+  }
+  .header__title_h1 {
+    font-size: 52px;
+  }
+  .header__title_text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .header__searching_name_Input {
+    width: 100%;
+  }
+  .header__searching_house_Input {
+    width: 100%;
+  }
+  .header__searching_house_div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 365px) {
+  .container {
+    padding: 0 20px;
+  }
+  .header {
+    margin-top: 30px;
+  }
+  .header__title {
+    margin-bottom: 14px;
+  }
+  .header__title_h1 {
+    font-size: 47px;
+  }
+  .header__title_text {
+    font-size: 15px;
+  }
+  .hr {
+    margin: 20px 0;
+  }
+}
+.main {
+  margin-bottom: 30px;
+}
+
+.articles {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article {
+  width: 334px;
+  height: 449px;
+  border-radius: 4px;
+  border: 1px solid var(--Stroke-light, #DEE2E6);
+  background: #FFF;
+}
+.article__picture_img {
+  height: 232px;
+  width: 100%;
+  border-radius: 4px 4px 0px 0px;
+  background: url(<path-to-image>) lightgray 50%/cover no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 25%;
+     object-position: 50% 25%;
+}
+.article__main {
+  padding: 24px 25px 24px 24px;
+  height: 217px;
+  display: flex;
+  flex-direction: column;
+}
+.article__main_name {
+  color: var(--Heading-Title-Color, #152536);
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.description {
+  color: var(--Heading-Title-Color, #152536);
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}/*# sourceMappingURL=style.css.map */
